@@ -437,14 +437,14 @@ In Forvis a single function `exec_xRET` is used for MRET, SRET and URET:
 
 ### snapshot of "Reading Guide", for those who just want to read it like an ISA manual
 
-Please see [Forvis Reading and Extension Guide](https://github.com/rsnikhil/Forvis_RISCV-ISA-Spec/Doc/forvis_reading_guide.pdf).
+Please see [Forvis Reading and Extension Guide](https://github.com/rsnikhil/Forvis_RISCV-ISA-Spec/blob/master/Doc/forvis_reading_guide.pdf)
 
 The code, together with this reading guide, is intended to be readable
 on its own, without any prior knowledge of Haskell.
 
 ### snapshot of "How to Compile/Run Guide" for those who want to execute a model on programs (ISA tests, Compliance tests, other programs)
 
-Please see [README](https://github.com/rsnikhil/Forvis_RISCV-ISA-Spec/README.md) in the Forvis repository for detailed instructions on how to build and run Forvis on ISA tests, on the Compliance Test Suite, on some C programs, on a Linux kernel, and on a FreeRTOS kernel.
+Please see [README](https://github.com/rsnikhil/Forvis_RISCV-ISA-Spec/blob/master/Doc/README) in the Forvis repository for detailed instructions on how to build and run Forvis on ISA tests, on the Compliance Test Suite, on some C programs, on a Linux kernel, and on a FreeRTOS kernel.
 
 The Linux kernel boot takes about 40 minutes on a fast laptop.
 
@@ -452,6 +452,4 @@ The FreeRTOS kernel boot takes a few seconds.
 
 ### snapshot of "How to Extend Guide" for those who want to extend the model to capture new ISA extensions/experiments.
 
-Please see [Forvis Reading and Extension Guide](https://github.com/rsnikhil/Forvis_RISCV-ISA-Spec/Doc/forvis_reading_guide.pdf) in the Forvis repository.
-
-https://github.com/rsnikhil/Forvis_RISCV-ISA-Spec/Doc/forvis_reading_guide.pdf
+Please see [Forvis Reading and Extension Guide](https://github.com/rsnikhil/Forvis_RISCV-ISA-Spec/blob/master/Doc/forvis_reading_guide.pdf) in the Forvis repository.
