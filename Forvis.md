@@ -155,7 +155,7 @@ Uses U.C.Berkeley's "softfloat" IEEE floating point emulation library
 (which is written in C/C++), accessed via Galois, Inc's Haskell
 wrapper.  See links above in Section "Dependencies on what tools"
 
-================================================================
+----------------------------------------------------------------
 ## Current capabilities (what the specification and associated tooling generates and enables)
 
 ### Emulation
