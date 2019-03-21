@@ -14,7 +14,6 @@ This is a table of the easily summarisable aspects of the RISC-V Formal ISA mode
 | Emulation                                         | Haskell       | Haskell                        |generated C or OCaml     | Haskell             | Verilator  |
 | ...emulation speed                  | ??? IPS (40min Linux boot)  |40K IPS on Intel Xeon E312      |300K IPS on Intel i7-7700  (4min Linux boot)  | 100K IPS on 6700HQ (Linux boot)     | Not measured |
 | Use as test oracle in tandem verification         | yes           |no                              |yes                      | yes                 | yes |
-| Use for software coverage analysis                | ???           |yes                             |???                      | ???                 | ??? |
 | Theorem-prover definitions                        | via hs-to-coq?|no                              |Coq,Isa,HOL4             | hs-to-coq           | Coq |
 | Use in documentation                              | to LaTeX      |to text                         |to LaTeX in RISC-V ISA   | no                  | no |
 | Use in test generation                            | (at UPenn?)   |no                              |yes                      | no                  | no |
