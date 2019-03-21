@@ -1,4 +1,4 @@
-A table of the easily summarisable aspects of the RISC-V Formal ISA model comparison.  It should be read together with the linked-to descriptions for each model.  This table describes the current state of the models only, not work in progress and future plans; see the descriptions for those. 
+This is a table of the easily summarisable aspects of the RISC-V Formal ISA model comparison.  It should be read together with the linked-to descriptions for each model.  This table describes the current state of the models only, not work in progress and future plans; see the descriptions for those. 
 
 |                                                   | Forvis        | Grift                          | Sail                    | riscv-plv           | Kami       | 
 | ------------------------------------------------- | ------------- | ------------------------------ | ------------------------| ------------------- | ---------- |
