@@ -1,9 +1,6 @@
-# Temporary_TGISA
+This site is UNDER CONSTRUCTION.
 
-UNDER CONSTRUCTION UNDER CONSTRUCTION UNDER CONSTRUCTION.
-
-This site is UNDER CONSTRUCTION.  Please contact 'rsnikhil' (Rishiyur
-S. Nikhil, Bluespec, Inc.) for more information.
+Please contact 'rsnikhil' (Rishiyur S. Nikhil, Bluespec, Inc.) for more information.
 
 Actual README starts below.
 
