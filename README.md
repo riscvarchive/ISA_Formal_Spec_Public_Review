@@ -7,24 +7,22 @@ Actual README starts below.
 ----------------------------------------------------------------
 # ISA Formal Spec Public Review
 
-To all who are interested in ISA Formal Specifications, we invite your
+To all who are interested in ISA Formal Specification for RISC-V, we (the ISA Formal Spec Technical Group in the RISC-V Foundation) invite your
 feedback on several draft Formal Specifications of the RISC-V ISA. We
 are interested in your opinions on how useful you would find each of
-the approaches represented here.
+the approaches represented here. 
+To date, these have been developed by various subgroups, each for their own purposes and with their own priorities.
 
-"We" = the ISA Formal Spec Technical Group in the RISC-V Foundation.
-
-We have been pursuing five different ISA specification approaches.
 This site contains (in addition to this README):
 
 - A summary of each of the approaches. The summaries are all written
   to a common template, for easier side-by-side comparison:
 
+    - [GRIFT](GRIFT.md)   (from Galois, Inc.)
+    - [Forvis](Forvis.md)  (from Bluespec, Inc.)
     - [Sail](Sail.md)    (from the University of Cambridge, UK, and SRI International)
     - [riscv-plv](riscv-plv.md)  (from MIT)
     - [Kami](Kami.md)    (from SiFive)
-    - [GRIFT](GRIFT.md)   (from Galois, Inc.)
-    - [Forvis](Forvis.md)  (from Bluespec, Inc.)
 
 - A [comparison table](comparison_table.md) showing features in a tabular form.
 
@@ -42,6 +40,40 @@ documentation on:
 - how to extend the spec (for future ISA extensions);
 
 - status and plans.
+
+----------------------------------------------------------------
+## When and How to Provide Feedback, and What Happens Next
+
+The Public Review period is: March 21, 2019 through May 5, 2019
+(standard 45 days recommended by the RISC-V Foundation).
+
+There are two ways to provide feedback (please at least fill in the questionnaire):
+
+- A short, structured [questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSe7jQx_IM2EqvHewuAKiROZXupwsqRu_pCgc-5d0y26DKph7A/viewform)
+    (should not take more than a few minutes).
+
+- If you wish, you can provide more expansive free-form comments using the "Issues" tab of this GitHub repo.
+
+We are particularly interested in:
+
+- Your use cases: Are you likely to use the ISA Formal Spec? In what way?
+
+- Your general assessment of how each of the five approaches might meet your needs.
+
+At the end of the feedback period, the ISA Formal Spec Technical Group
+will respond to each issue raised, and will make a recommendation to
+the RISC-V Foundation about which of the five specs should be adopted
+as the "official" spec.
+
+An immediate use of the formal spec is to be the Golden Reference
+Model against which "Compliance" is measured by the RISC-V Foundation.
+
+Over time, the spec is expected to be maintained and to grow to
+include future official features/extensions of the RISC-V ISA.
+
+
+-------------------------------------------------------------
+## Scope
 
 The initial target for the group is the following set of features only:
 
@@ -67,36 +99,6 @@ already in progress).
 All the five models here are works in progress, and so may not be
 ready with all the above features.  Each project's Summary page and
 home site describes status and plans for the future.
-
-----------------------------------------------------------------
-## When and How to Provide Feedback, and What Happens Next
-
-The Public Review period is: March 21, 2019 through May 5, 2019
-(standard 45 days recommended by the RISC-V Foundation).
-
-There are two ways to provide feedback (please at least fill in the questionnaire):
-
-- A quick, structured [questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSe7jQx_IM2EqvHewuAKiROZXupwsqRu_pCgc-5d0y26DKph7A/viewform)
-    (should not take more than a few minutes).
-
-- If you wish, you can provide more expansive free-form comments using the "Issues" tab of this GitHub repo.
-
-We are particularly interested in:
-
-- Your use cases: Are you likely to use the ISA Formal Spec? In what way?
-
-- Your general assessment of how each of the five approaches might meet your needs.
-
-At the end of the feedback period, the ISA Formal Spec Technical Group
-will respond to each issue raised, and will make a recommendation to
-the RISC-V Foundation about which of the five specs should be adopted
-as the "official" spec.
-
-An immediate use of the formal spec is to be the Golden Reference
-Model against which "Compliance" is measured by the RISC-V Foundation.
-
-Over time, the spec is expected to be maintained and to grow to
-include future official features/extensions of the RISC-V ISA.
 
 ----------------------------------------------------------------
 ## Background on "What is a Formal Spec?  Why Have One?"
