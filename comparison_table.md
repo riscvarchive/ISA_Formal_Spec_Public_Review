@@ -18,8 +18,8 @@ This is a table of the easily summarisable aspects of the RISC-V Formal ISA mode
 | Use in documentation                              | to LaTeX      |to text                         |to LaTeX in RISC-V ISA   | no                  | no |
 | Use in test generation                            | no    |no                              |yes                      | no                  | no |
 | Use for concurrency-model litmus test evaluation  | no            |no                              |yes                      | no                  | no |
-| Test coverage - riscv-tests suite                 | ???           |yes                             |yes                      | yes                 | yes |
-| Test coverage - RISC-V compliance tests           | all           |almost all                      |yes                      | yes                 | yes |
+| Test coverage - riscv-tests suite                 | all           |yes                             |yes                      | yes                 | yes |
+| Test coverage - RISC-V compliance tests           | yes           |almost all                      |yes                      | yes                 | yes |
 | Test coverage - OS boots                          | Linux,FreeRTOS|no                              |Linux,FreeBSD,seL4       | Linux               | no      |
 | Test coverage - Concurrency litmus tests          | no            |no                              |yes                      | no                  | no      |
 
