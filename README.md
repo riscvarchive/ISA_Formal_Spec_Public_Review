@@ -116,12 +116,12 @@ functional simulator for RISC-V binaries.
 which itself has clear semantics; that it is executable, and that it
 is machine readable for manipulation by formal tools.  Of course, it
 should be precise, complete, and unambiguous.  (This is where it
-differs from a text spec and most production simulators).
+differs from a text spec and most production simulators.)
 
 "Simple" means it should be understandable and usable by a wide
-audience-- not just experts in formal methods, but also assembly
+audience---not just experts in formal methods, but also assembly
 language programmers, compiler writers, and hardware designers, many
-of whom may not have a background in formal methods, and may not have
+of whom may not have a background in formal methods and may not have
 the interest or time to acquire one.
 
 When finalized, the RISC-V ISA Formal Spec is expected to become *the*
