@@ -11,8 +11,8 @@ This is a table of the easily summarisable aspects of the RISC-V Formal ISA mode
 | Specification of assembly syntax and encoding     | no            |pp                              |yes                      | no                  | yes        |
 | Concurrency                                       | no            |no                              |yes                      | no                  | no         |
 | Floating-point                                    | via Softfloat |via Softfloat                   |no                       | via Softfloat       | Native implementation of IEEE 754-2008 |
-| Emulation                                         | Haskell       | Haskell                        |generated C or OCaml     | Haskell             | Verilator  |
-| ...emulation speed                  | ??? IPS (40min Linux boot)  |40K IPS on Intel Xeon E312      |300K IPS on Intel i7-7700  (4min Linux boot)  | 100K IPS on 6700HQ (Linux boot)     | Not measured |
+| Simulation/Emulation  | Haskell       | Haskell                        |generated C or OCaml     | Haskell             | Verilator  |
+| ...emulation speed                  | 75K IPS (40min Linux boot)  |40K IPS on Intel Xeon E312      |300K IPS on Intel i7-7700  (4min Linux boot)  | 100K IPS on 6700HQ (Linux boot)     | Not measured |
 | Use as test oracle in tandem verification         | yes           |no                              |yes                      | yes                 | yes |
 | Theorem-prover definitions                        | via hs-to-coq?|no                              |Coq,Isa,HOL4             | hs-to-coq           | Coq |
 | Use in documentation                              | to LaTeX      |to text                         |to LaTeX in RISC-V ISA   | no                  | no |
