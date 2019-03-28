@@ -37,13 +37,13 @@ The complete processor model includes register and memory modules written in Ver
 
 The RISC-V Kami Spec relies on the following tools/libraries:
 
-1. Coq
+1. Coq 8.9.x
 2. Kami
-3. Verilog compilation and simulation tools (verilator)
+3. Verilator >= 3.9xx (for compiling and simulating verilog)
 4. BBV (Bedrock Bit Vector) -- it implements the bit-vector library in Coq
 5. coq-record-update -- it implements notation for updating structures in place
 6. clang (C-compiler that can run verilator generated C code fast)
-7. GHC (Haskell compiler to generate verilog)
+7. GHC 8.4.x (Haskell compiler to generate verilog)
 
 ## Tool ecosystem: what other work has been/is being done with those tools
 
@@ -137,7 +137,7 @@ SiFive plans to sponsor the RISC-V Kami spec for the indefinite future, with all
 
 ### snapshot of "Reading Guide", for those who just want to read it like an ISA manual
 
-RISC-V Spec Kami refers to "instruction databases" to model the behavior of the instructions that it supports. These database entries are referred to as "functional units" internally, and are stored in the following files: Alu.v, Fpu.v, and Mem.v.
+RISC-V Spec Kami refers to "instruction databases" to model the behavior of the instructions that it supports. These database entries are referred to as "functional units" internally, and are stored in the following directories: FuncUnits/Alu/*.v, FuncUnits/Fpu/*.v, and FuncUnits/Mem/*.v.
 
 Each of these contains a datastructure that lists various RISC-V instructions. Each instruction entry has the following format:
 
@@ -177,7 +177,7 @@ For example, Fpu.v contains the following entry for the `fnadd.s` instruction:
   inputXform  := add_in_pkt $0;
   outputXform := muladd_out_pkt;
   optMemXform := None;
-  instHints := falseHints[[hasFrs1 := true]][[hasFrs2 := true]][[hasFrd := true]] 
+  instHints := falseHints{*hasFrs1 := true*}{*hasFrs2 := true*}{*hasFrd := true*}
 |};
 ```
 
@@ -199,7 +199,7 @@ In summary:
 ```
 $ git submodule update --init
 $ ./doGenerate.sh
-$ ./runElf.sh $PATH
+$ ./runElf.sh $PATH/file.elf
 $ ./runTests.sh $PATH
 ```
 
@@ -241,7 +241,7 @@ Once the developer has selected, or created, the functional unit whose semantic 
   inputXform  := add_in_pkt $0;
   outputXform := muladd_out_pkt;
   optMemXform := None;
-  instHints := falseHints[[hasFrs1 := true]][[hasFrs2 := true]][[hasFrd := true]] 
+  instHints := falseHints{*hasFrs1 := true*}{*hasFrs2 := true*}{*hasFrd := true*}
 |}
 ```
 
