@@ -1,8 +1,5 @@
-This site is UNDER CONSTRUCTION.
-
-Please contact 'rsnikhil' (Rishiyur S. Nikhil, Bluespec, Inc.) for more information.
-
-Actual README starts below.
+The Public Review period is now open: March 29, 2019 through May 13, 2019
+(standard 45 days recommended by the RISC-V Foundation).
 
 ----------------------------------------------------------------
 # ISA Formal Spec Public Review
@@ -44,7 +41,7 @@ documentation on:
 ----------------------------------------------------------------
 ## When and How to Provide Feedback, and What Happens Next
 
-The Public Review period is: March 21, 2019 through May 5, 2019
+The Public Review period is: March 29, 2019 through May 13, 2019
 (standard 45 days recommended by the RISC-V Foundation).
 
 There are two ways to provide feedback (please at least fill in the questionnaire):
