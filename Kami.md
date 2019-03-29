@@ -39,7 +39,7 @@ The RISC-V Kami Spec relies on the following tools/libraries:
 
 1. Coq 8.9.x
 2. Kami
-3. Verilator >= 3.9xx (for compiling and simulating verilog)
+3. Verilator >= 4.014 (for compiling and simulating verilog)
 4. BBV (Bedrock Bit Vector) -- it implements the bit-vector library in Coq
 5. coq-record-update -- it implements notation for updating structures in place
 6. clang (C-compiler that can run verilator generated C code fast)
@@ -247,3 +247,17 @@ Once the developer has selected, or created, the functional unit whose semantic 
 
 The developer will need to define the `inputXform`, `outputXform`, and `optMemXform` transformation functions.
 
+## Compilation
+
+This package consists of a set of Kami files. The main processor model is written in Kami - a domain specific language embedded within Gallina. The Kami language constructs are defined in Kami. The model is defined in ProcKami.
+
+This model can be used to generate a processor simulator. The standard way to do this is to:
+
+1. Compile the Kami/Coq files
+2. "Extract" these files into Haskell
+3. Compile the Haskell files to produce the Verilog code generator
+4. Run the Verilog code generator to produce a Verilog processor model
+5. Pass the Verilog model to Verilator to produce C source code for the processor simulator
+6. Compile the C simulator.
+
+The `doGenerate.sh` script performs these steps when building the simulator.
