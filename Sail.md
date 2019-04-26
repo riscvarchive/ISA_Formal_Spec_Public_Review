@@ -92,6 +92,9 @@ semantics, which lets one compute all the concurrency-model-allowed behaviours o
 
 - The model supports parameterization for platform-specific implementation choices.
 
+- The model has extendability hooks that are being used to develop the
+  CHERI-RISC-V architecture.
+
 - The model does not currently cover RV128, floating-point for the F and D standard
   extensions, encodings for HINT instructions, PMP/PMA physical memory
   attributes and protection, event and performance counter support,
