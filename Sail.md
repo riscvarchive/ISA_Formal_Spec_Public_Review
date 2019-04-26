@@ -192,9 +192,9 @@ tool.
 
 Latex definitions can be generated from the model that are suitable
 for inclusion in reference documentation.  Drafts of the RISC-V
-[unprivileged](https://github.com/rems-project/riscv-isa-manual/blob/sail/release/riscv-spec-sail-draft-alpha.pdf)
+[unprivileged](https://github.com/rems-project/riscv-isa-manual/blob/sail/release/riscv-spec-sail-draft-alpha2.pdf)
 and
-[privileged](https://github.com/rems-project/riscv-isa-manual/blob/sail/release/riscv-privileged-sail-draft-alpha.pdf)
+[privileged](https://github.com/rems-project/riscv-isa-manual/blob/sail/release/riscv-privileged-sail-draft-alpha2.pdf)
 specifications that include the Sail formal definitions are available
 in the sail branch of this [riscv-isa-manual
 repository](https://github.com/rems-project/riscv-isa-manual/tree/sail).
@@ -372,9 +372,9 @@ There are two options for a reading guide.  If one intends to
 understand some detail of the ISA specification documents, one could
 use the Sail-annotated of the RISC-V architecture specifications available in the sail branch of
 <https://github.com/rems-project/riscv-isa-manual>:
-the [unprivileged](https://github.com/rems-project/riscv-isa-manual/blob/sail/release/riscv-spec-sail-draft-alpha.pdf)
+the [unprivileged](https://github.com/rems-project/riscv-isa-manual/blob/sail/release/riscv-spec-sail-draft-alpha2.pdf)
 and
-[privileged](https://github.com/rems-project/riscv-isa-manual/blob/sail/release/riscv-privileged-sail-draft-alpha.pdf) specs.
+[privileged](https://github.com/rems-project/riscv-isa-manual/blob/sail/release/riscv-privileged-sail-draft-alpha2.pdf) specs.
 If one intends to understand the Sail model itself, one could use the
 [ReadingGuide](https://github.com/rems-project/sail-riscv/blob/master/doc/ReadingGuide.md) provided in the model repository.
 
