@@ -23,8 +23,8 @@ This site contains (in addition to this README):
 
 - A [comparison table](comparison_table.md) showing features in a tabular form.
 
-- The survey responses to date, both the [individual responses](RISC-V\ Formal\ ISA\ Specification\ Public\ Review\ Survey\ -\ responses\ individual.pdf) 
-and a [summary](RISC-V\ Formal\ ISA\ Specification\ Public\ Review\ Survey\ -\ responses\ summary.pdf).
+- The survey responses to date, both the individual responses (RISC-V Formal ISA Specification Public Review Survey - responses individual.pdf) 
+and a summary (RISC-V Formal ISA Specification Public Review Survey - responses summary.pdf).
 
 Each specification summary has a link to the project's home web site (all on GitHub)
 where you can explore that project's spec in full detail.  Each
