@@ -7,7 +7,7 @@ riscv-plv
 ----------------------------------------------------------------
 ## Authors (with institutions)
 
-Ian J Clester, Thomas Bourgeat, Andy Wright, Samuel Gruëtter, Adam Chlipala (MIT)
+Ian J Clester, Thomas Bourgeat, Andy Wright, Samuel Gruetter, Adam Chlipala (MIT)
 
 ----------------------------------------------------------------
 ## Spec sources snapshot (e.g. URL to github repo)
@@ -56,7 +56,7 @@ used to interface with proof of processors ([Kami](https://github.com/mit-plv/ka
 
 We wanted a unified way to interact with the different projects
 of our group involving RISC-V: proving software in
-Coq, proving simple hardware in Coq (Kami), developing 
+Coq, proving simple hardware in Coq (Kami), developing
 architectures in Bluespec.  Our goal is for the same semantics to be
 palatable to partisans of all formal-methods tools (so no bias
 towards any one of them) and to practitioners (so no assumption of
@@ -77,7 +77,7 @@ No user-level exceptions.
 ----------------------------------------------------------------
 ## Current specification of assembly syntax and encoding
 
-We use normal GCC and load ELF files. 
+We use normal GCC and load ELF files.
 The instructions are represented in an algebraic data type defined in `src/Spec/Decode.hs`.
 Here's one example instruction:
     Lb { rd :: Register, rs1 :: Register, oimm12 :: MachineInt }
