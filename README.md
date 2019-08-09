@@ -1,4 +1,4 @@
-The Public Review period is now open: March 29, 2019 through May 13, 2019
+The Public Review period was open: March 29, 2019 through May 13, 2019
 (standard 45 days recommended by the RISC-V Foundation).
 
 ----------------------------------------------------------------
@@ -23,8 +23,8 @@ This site contains (in addition to this README):
 
 - A [comparison table](comparison_table.md) showing features in a tabular form.
 
-- The survey responses to date, both the individual responses (RISC-V Formal ISA Specification Public Review Survey - responses individual.pdf) 
-and a summary (RISC-V Formal ISA Specification Public Review Survey - responses summary.pdf).
+- The survey responses, both the individual responses (riscv-formal-isa-responses-all.pdf) 
+and a summary (riscv-formal-isa-responses-summary.pdf).
 
 Each specification summary has a link to the project's home web site (all on GitHub)
 where you can explore that project's spec in full detail.  Each
