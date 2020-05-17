@@ -7,9 +7,9 @@ This is a table of the easily summarisable aspects of the RISC-V Formal ISA mode
 | Licence                                           | MIT           |GPL3                            |BSD                      | MIT                 | Apache 2.0 |
 | Metalanguage                                      | Haskell       |Haskell                         |Sail                     | Haskell             | Kami/Coq   |
 | Functional coverage - Base ISA and extensions     | RV32/64IMAFDC |RV32/64GC                       |RV32/RV64IMAC            | RV32/64IMAF         | RV32/64GC  |
-| Functional coverage - Privilege levels            | MUS,Sv32,39,48|M                               |MUS,Sv32,39,48           | Sv39                | no         |
+| Functional coverage - Privilege levels            | MUS,Sv32,39,48|M                               |MUS,Sv32,39,48           | Sv39                | MUS,Sv32,39,48|
 | Specification of assembly syntax and encoding     | no            |pp                              |yes                      | no                  | yes        |
-| Concurrency                                       | no            |no                              |yes                      | no                  | no         |
+| Concurrency                                       | no            |no                              |yes                      | no                  | yes         |
 | Floating-point                                    | via Softfloat |via Softfloat                   |no                       | via Softfloat       | Native implementation of IEEE 754-2008 |
 | Simulation/Emulation  | Haskell       | Haskell                        |generated C or OCaml     | Haskell             | Verilator  |
 | ...emulation speed    | 75K IPS (180M instrs/40min Linux boot)  |40K IPS on Intel Xeon E312      |300K IPS on Intel i7-7700  (4min Linux boot)  | 100K IPS on 6700HQ (Linux boot)     | Not measured |
