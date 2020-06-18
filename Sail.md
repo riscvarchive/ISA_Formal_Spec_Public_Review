@@ -7,6 +7,7 @@ Sail RISC-V model
 ## Authors (with institutions)
 
  Prashanth Mundkur, SRI International;
+ Rishiyur Nikhil (Bluespec Inc.); 
  Jon French, University of Cambridge;
  Brian Campbell, University of Edinburgh;
  Robert Norton, University of Cambridge;
@@ -14,6 +15,7 @@ Sail RISC-V model
  Thomas Bauereiss, University of Cambridge;
  Shaked Flur, University of Cambridge;
  Peter Sewell, University of Cambridge
+
 
 ## Spec sources snapshot (e.g. URL to github repo)
 
@@ -40,7 +42,8 @@ ranges that are pervasive in ISA specifications.  Given a Sail
 definition, the tool will type-check it and generate executable
 emulators, in C and OCaml, theorem-prover definitions for Isabelle,
 HOL4, and Coq, and definitions to integrate with our
-[RMEM](http://www.cl.cam.ac.uk/users/pes20/rmem) tool for concurrency
+[RMEM](http://www.cl.cam.ac.uk/users/pes20/rmem)
+and [isla-axiomatic](https://isla-axiomatic.cl.cam.ac.uk/) tools for concurrency
 semantics.
 
 ![Sail overview](http://www.cl.cam.ac.uk/users/pes20/sail/overview-sail.png)
@@ -55,7 +58,7 @@ It depends on OCaml, OPAM, libgmp-dev, Z3, Lem, and Ott.
 
 
 Sail is being used for multiple ISA descriptions, including
-essentially complete versions of the sequential behaviour of ARMv8.5-A
+essentially complete versions of the sequential behaviour of ARMv8-A
 (automatically derived from the authoritative ARM-internal
 specification, and released under a BSD Clear licence with ARM's
 permission), RISC-V, MIPS, and CHERI-MIPS; all these are complete
@@ -83,7 +86,7 @@ semantics, which lets one compute all the concurrency-model-allowed behaviours o
 
 ## Current functional coverage (what's modelled now, in RISC-V code and in English)
 
-- The model covers RV32 and RV64 IMAC (base 32-bit and 64-bit integer architectures, with the standard
+- The model covers RV32 and RV64 IMAFDC (base 32-bit and 64-bit integer architectures, with the standard
   multiply/divide, atomic, and compressed extensions), M/S/U (machine,
   supervisor and user privilege) modes, and the Sv32, Sv39, and Sv48 modes
   of address translation.  Operation in M-only, M/U and M/S/U
@@ -95,10 +98,7 @@ semantics, which lets one compute all the concurrency-model-allowed behaviours o
 - The model has extendability hooks that are being used to develop the
   CHERI-RISC-V architecture.
 
-- The model does not currently cover RV128, floating-point for the F and D standard
-  extensions, encodings for HINT instructions, PMP/PMA physical memory
-  attributes and protection, event and performance counter support,
-  the hypervisor mode for virtualization,
+- The model does not currently cover RV128, the hypervisor mode for virtualization,
   and other extensions such as the vector and bit-manipulation extensions.
 
 ## Current specification of assembly syntax and encoding
@@ -113,13 +113,13 @@ relaxed memory model, RVWMO (as described in an appendix of the [RISC-V
 user-level specification](https://github.com/riscv/riscv-isa-manual/releases/tag/draft-20181227-c6741cb)), which is one of the reference models used
 in the development of the RISC-V concurrency architecture; this is
 part of our [RMEM](http://www.cl.cam.ac.uk/users/pes20/rmem) tool.
-
+It is also integrated with the RISC-V axiomatic concurrency model
+ as part of our [isla-axiomatic](https://isla-axiomatic.cl.cam.ac.uk/) tool.
 
 
 ## Current treatment of floating-point
 
-The Sail RISC-V model does not currently support floating point.
-We plan to add this over the next few months, at least for some of the Sail emulator and theorem-prover targets.  
+The Sail RISC-V model supports floating point for the generated C emulator, using the Softfloat library; it does not currently support floating point for the theorem-prover targets.
 
 ## Current capabilities (what the specification and associated tooling generates and enables)
 

@@ -1,5 +1,8 @@
 The Public Review period was open: March 29, 2019 through May 13, 2019
 (standard 45 days recommended by the RISC-V Foundation).
+Following this, the RISC-V foundation selected the Sail model as its official formal specification. 
+
+The following details are kept for reference, but more work has been done on some of the models since the review; the descriptions here may not be up to date.
 
 ----------------------------------------------------------------
 # ISA Formal Spec Public Review
